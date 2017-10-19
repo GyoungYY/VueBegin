@@ -1,4 +1,4 @@
-# vuehello
+# VueBegin
 
 > A Vue.js project
 
