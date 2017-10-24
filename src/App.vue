@@ -10,6 +10,7 @@
                 <el-menu-item index="2-2">选项2</el-menu-item>
                 <el-menu-item index="2-3">选项3</el-menu-item>
             </el-submenu>
+            <el-menu-item index="mintui">Mint-UI</el-menu-item>
         </el-menu>
         <router-view/>
     </div>
@@ -27,9 +28,15 @@
             handleSelect(key, keyPath) {
                 if(key === 'vue'){
                     this.$router.push({path:'/vue'});
+                    return;
                 }
                 if(key === 'components'){
                     this.$router.push({path:'/components'});
+                    return;
+                }
+                if(key === 'mintui'){
+                    this.$router.push({path:'/mintui'});
+                    return;
                 }
             }
         }
