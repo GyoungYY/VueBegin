@@ -1,11 +1,14 @@
 <template>
     <div class="components-container">
+        <h1>less</h1>
         <div class="list-item">
             测试npm install less less-loader --save   lang="less"，背景黑色，字体白色即没问题
         </div>
 
+        <h1>vue-cropper</h1>
         <div class="list-item">
-            头像裁剪插件，npm install vue-cropper --save    https://github.com/xyxiao001/vue-cropper
+            头像裁剪插件，npm install vue-cropper --save
+            <a href="https://github.com/xyxiao001/vue-cropper" target="_blank">github地址</a>
         </div>
         <div style="height: 500px;">
             <vueCropper
@@ -21,8 +24,28 @@
                 :fixed="example2.fixed"
                 :fixedNumber="example2.fixedNumber"
             ></vueCropper>
-            <el-button type="primary" @click="preview()">预览(base64)</el-button>
-            <img :src="url" style="width: 200px;height: 200px;">
+        </div>
+        <el-button type="primary" @click="preview()">预览(base64)</el-button>
+        <img :src="url" style="width: 200px;height: 200px;">
+
+        <h1>bootstrap</h1>
+        <div class="list-item">
+            引入bootstrap，npm install jquery --save  npm install bootstrap --save，在webpack.base.conf.js中配置，
+            然后在main.js中引入。
+            <a href="http://blog.csdn.net/wild46cat/article/details/77662555" target="_blank">参考博客</a>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                Action <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+            </ul>
         </div>
     </div>
 </template>
@@ -66,6 +89,10 @@
 </script>
 
 <style scoped lang="less">
+    .components-container {
+        margin-bottom: 60px;
+    }
+
     .components-container .list-item {
         background-color: #ddd;
         padding: 10px;
