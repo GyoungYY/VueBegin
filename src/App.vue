@@ -13,6 +13,9 @@
             <el-menu-item index="mintui">Mint-UI</el-menu-item>
         </el-menu>
         <router-view/>
+        <footer>
+            <div>bilibili阿广</div>
+        </footer>
     </div>
 </template>
 
@@ -54,5 +57,14 @@
 
     body {
         margin: 0;
+    }
+
+    footer{
+        background-color: #324157;
+        color: #fff;
+        padding:20px 0;
+        position: fixed;
+        bottom: 0;
+        width:100%;
     }
 </style>

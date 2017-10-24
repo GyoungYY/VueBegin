@@ -90,7 +90,7 @@
 
 <style scoped lang="less">
     .components-container {
-        margin-bottom: 60px;
+        margin-bottom: 80px;
     }
 
     .components-container .list-item {
