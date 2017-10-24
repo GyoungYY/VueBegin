@@ -8,15 +8,21 @@ Vue.use(Router)
 
 export default new Router({
     routes: [
+
         {
             path: '/',
-            name: 'NavMenu',
-            component: NavMenu
+            component: Components,
+            redirect: '/components'
         },
         {
             path: '/components',
             name: 'Components',
             component: Components
+        },
+        {
+            path: '/vue',
+            name: 'NavMenu',
+            component: NavMenu
         },
     ]
 })

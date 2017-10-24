@@ -20,13 +20,13 @@
         name: 'app',
         data() {
             return {
-                activeIndex: 'vue',
+                activeIndex: 'components',
             }
         },
         methods: {
             handleSelect(key, keyPath) {
                 if(key === 'vue'){
-                    this.$router.push({path:'/'});
+                    this.$router.push({path:'/vue'});
                 }
                 if(key === 'components'){
                     this.$router.push({path:'/components'});
