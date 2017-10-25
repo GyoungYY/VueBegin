@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="learn-item">
         vue学习
     </div>
 </template>
@@ -8,6 +8,6 @@
 
 </script>
 
-<style scoped>
-
+<style scoped lang="scss">
+    @import '../style/learn.scss';
 </style>

@@ -47,6 +47,12 @@
                 <li><a href="#">Separated link</a></li>
             </ul>
         </div>
+
+        <h1>sass</h1>
+        <div class="list-item">
+            引入sass，npm install node-sass --save、npm install sass-loader --save，设置style的lang="scss"
+            <a href="http://blog.csdn.net/lily2016n/article/details/75309492" target="_blank">参考博客</a>
+        </div>
     </div>
 </template>
 
