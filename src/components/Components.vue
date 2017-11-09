@@ -53,17 +53,26 @@
             引入sass，npm install node-sass --save、npm install sass-loader --save，设置style的lang="scss"
             <a href="http://blog.csdn.net/lily2016n/article/details/75309492" target="_blank">参考博客</a>
         </div>
+
+        <h1>js解析Excel</h1>
+        <div class="list-item">
+            引入js-xlsx插件，引用static目录下两个文件
+            <a href="http://www.deanhan.cn/js-excel.html" target="_blank">参考博客</a>
+        </div>
+        <import-excel></import-excel>
     </div>
 </template>
 
 <script>
     import vueCropper from 'vue-cropper'
     import ElButton from "../../node_modules/element-ui/packages/button/src/button.vue";
+    import ImportExcel from './NavMenu.vue'
 
     export default {
         components: {
             ElButton,
-            vueCropper
+            vueCropper,
+            ImportExcel
         },
         data() {
             return {
