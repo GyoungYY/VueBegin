@@ -16,12 +16,9 @@
             return {}
         },
         methods: {
-            //清楚表格区域数据
             clearTable: function () {
                 this.tableC.innerHTML = '';
             },
-
-            //生成表格
             makeTable: function (data) {
                 this.clearTable();
                 for (var index in data) { //遍历每个表
@@ -53,8 +50,6 @@
                     this.tableC.appendChild(table);
                 }
             },
-
-            //处理文件
             handleFile: function (files, callback) {
                 var f = files[0],
                     reader = new FileReader(),

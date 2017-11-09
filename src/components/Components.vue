@@ -66,7 +66,7 @@
 <script>
     import vueCropper from 'vue-cropper'
     import ElButton from "../../node_modules/element-ui/packages/button/src/button.vue";
-    import ImportExcel from './NavMenu.vue'
+    import ImportExcel from './ImportExcel.vue'
 
     export default {
         components: {
